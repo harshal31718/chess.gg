@@ -9,7 +9,7 @@ const InitGame = ({ setRoom, setOrientation, setPlayers }) => {
     const [roomError, setRoomError] = useState('');
 
     return (
-        <div>
+        <div className='d-flex flex-column justify-content-center align-items-center h-100'>
             <CustomDialog open={roomDialogOpen}
                 handleClose={() => setRoomDialogOpen(false)}
                 title="Select Room to Join"
@@ -56,6 +56,8 @@ const InitGame = ({ setRoom, setOrientation, setPlayers }) => {
 
             {/* Button for joining a game */}
             <Button
+                variant="contained"
+                color="secondary"
                 onClick={() => {
                     setRoomDialogOpen(true);
                 }}
