@@ -27,7 +27,7 @@ const App = () => {
   })
 
   return (
-    <div className="p-1" style={{
+    <div className="d-flex align-items-center p-1" style={{
       backgroundImage: `url(${Background})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
